@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amigo Secreto</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Moon+Dance&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1> 🎁 Juego del Amigo Secreto 🎁</h1>
+        <input type="text" id="nombre" placeholder="   Ingresa un nombre  ">
+        <button>
+          <span class="shadow" onclick="agregarNombre()"
+          ></span>
+          <span class="edge" onclick="agregarNombre()"></span>
+          <span class="front text"onclick="agregarNombre()"> Agregar Nombre
+          </span>
+        </button>
+        <ul id="listaNombres"></ul>
+        <button>
+          <span class="shadow" onclick="sortearAmigo()"
+          ></span>
+          <span class="edge" onclick="sortearAmigo()"></span>
+          <span class="front text"onclick="sortearAmigo()"> Sortear
+          </span>
+        </button>
+        <button>
+          <span class="shadow" onclick="resetearLista()"
+          ></span>
+          <span class="edge" onclick="resetearLista()"></span>
+          <span class="front text"onclick="resetearLista()"> Reiniciar Juego
+          </span>
+        </button>
+        
+
+    
+    <p id="resultado"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+

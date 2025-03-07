@@ -1,0 +1,278 @@
+.moon-dance-regular {
+  font-family: "Moon Dance", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.mogra-regular {
+  font-family: "Mogra", system-ui;
+}
+
+body {
+  background-image: url(img/Flux.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+ 
+h1 {
+font-size: 75px;
+color: #210100;
+font-family: 'Moon Dance', cursive;
+}
+
+.container {
+    background: rgba(181, 202, 174, 0.8);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0B1A21;
+    text-align: center;
+}
+
+  
+
+input {
+  padding: 20px;
+  margin: 20px 0;
+  width: 40%;
+  border: 1px solid #0B1A21;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Mogra", system-ui;
+  background-color: #EFECC4;
+}
+
+ 
+
+ul {
+  list-style: none;
+  padding: 10px; 
+  max-height: 200px; 
+  overflow-y: auto; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Espacio entre elementos */
+}
+
+
+/* Estilo lista*/
+
+ul li { 
+  background: #EFECC4;
+  margin: 10px 50px; /* Reduce los márgenes */
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px; /* Ajusta el tamaño de fuente */
+  text-align: center;
+  width: 30%; /* Para evitar que los elementos sean muy anchos */
+}
+
+#resultado {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #04242D;
+  font-size:  35px;
+  font-family: "Mogra", system-ui;
+}
+ 
+ /*agregar nombre*/
+.button1 {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+ }
+ 
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(189, 60%, 26%/ 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     hsl(193, 84%, 10%) 0%, 
+     hsl(189, 60%, 26%) 8%, 
+     hsl(199, 50%, 9%) 92%, 
+     hsl(105, 21%, 74%) 100% 
+   );
+ }
+ 
+.front {
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 22px;
+  color: hsl(186, 25%, 39%);
+  background: #7AB9B0;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+}
+ 
+ button:hover {
+  filter: brightness(110%);
+}
+ 
+ button:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+}
+ 
+ button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+ 
+button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+}
+ 
+ button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+ 
+ button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+ /*sortear*/
+button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+}
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+}
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     #839583 0%,
+     #033542 8%,
+     #5DA29F 92%,
+     #043442 100%
+   );
+}
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+  border-radius: 22px;
+  font-size: 1.1rem;
+  color: #EFECC4;
+  background: #043442; 
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ button:hover {
+  filter: brightness(110%);
+ }
+ 
+ button:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .front {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .front {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
